@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml" > 
+<head> 
+    <meta charset="utf-8">
+	<title>Untitled Page</title> 	
+<SCRIPT type="text/javascript"> 
+    function GoSearch() { 
+        var text = document.formsearch.text.value; 
+        var ft = document.formsearch.ft.value; 
+        var author = document.formsearch.author.value; 
+        var FullSearchUrl = "http://blogs.yandex.ru/search.rss?text="+ 
+			text + 
+			"&ft=" + ft	+ 
+			"&author=" + author;        
+		location.href = FullSearchUrl;    
+    } 
+ 
+</SCRIPT> 
+ 
+</head> 
+<body> 
+	<FORM NAME="formsearch" action=""> 	   
+	   <br> 
+	   Искомый текст <INPUT TYPE="text" NAME="text" SIZE="40">  
+	   <br> 
+	   Область поиска <INPUT TYPE="text" NAME="ft" SIZE="40">  
+	   <br> 
+	   Автор <INPUT TYPE="text" NAME="author" SIZE="40">  
+	   <br> 
+	   <INPUT TYPE="button" VALUE="Искать" onClick="GoSearch()"> 
+	 
+	</FORM> 
+</body> 
+</html>
